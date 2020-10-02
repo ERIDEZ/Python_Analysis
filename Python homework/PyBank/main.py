@@ -1,7 +1,7 @@
 import os
 import csv
 
-PyBank = os.path.join("Resources","PyBank.csv")
+PyBank = os.path.join("..","Resources","PyBank.csv")
 
 ProfitLosses=[]
 Date=[]
