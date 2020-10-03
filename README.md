@@ -1,2 +1,2 @@
-# Python_HWK_Erick
+# python_challenge
 PyBank and PyPoll activities
