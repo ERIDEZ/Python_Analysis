@@ -1,7 +1,7 @@
 import os
 import csv
 
-PyBank = os.path.join("..","Resources","PyBank.csv")
+PyBank = os.path.join("Resources","PyBank.csv")
 
 ProfitLosses=[]
 Date=[]
@@ -50,3 +50,15 @@ print(f'Total: ${TotalProfit}')
 print(f'Average change: ${round(Avrg,2)}')
 print(f'Greatest Increase in Profits: {Date[maximun]} ${differences[maximun]}')
 print(f'Greatest Decrease in Profits: {Date[minimun]} ${differences[minimun]}')
+
+
+output_file ="pybank_analysis.txt"
+
+with open(output_file, "w") as file:
+    file.write(f'Financial Analysis\n')
+    file.write(f' ----------------------\n')
+    file.write(f'Total months: {len(Date)}\n')
+    file.write(f'Total: ${TotalProfit}\n')
+    file.write(f'Average change: ${round(Avrg,2)}\n')
+    file.write(f'Greatest Increase in Profits: {Date[maximun]} ${differences[maximun]}\n')
+    file.write(f'Greatest Decrease in Profits: {Date[minimun]} ${differences[minimun]}')
