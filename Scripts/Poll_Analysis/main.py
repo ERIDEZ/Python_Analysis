@@ -31,28 +31,6 @@ Cand_list=list(my_set)
 for x in Cand_list:
     Votes.append(Candidate.count(x))
 
-
-
-# RESULT OF THE ACTIVITY
-#print("Election Results")
-
-#print("------------------")
-
-#print(f'Total votes: {Total_votes}')
-
-#print("------------------")
-
-#for (a,b) in zip(Cand_list,Votes):
-#    print(f'{a}: {round((b/Total_votes)*100,3):.3f}% ({b})')
-
-#winner=Votes.index(max(Votes))
-
-#print("------------------")
-
-#print(f'Winner: {Cand_list[winner]}')
-
-#print("------------------")
-
 output_file ="pypoll_analysis.txt"
 
 with open(output_file, "w") as file:
